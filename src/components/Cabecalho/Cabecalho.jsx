@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Cabecalho() {
   return (
-        <header className="bg-gray-800 text-white h-16">
+        <header className="bg-gray-500 text-white h-16">
           <nav className="flex flex-row justify-around">
             <Link className="link-cabecalho" href="/consumo/users-all-view">USUÁRIOS</Link>
             <Link className="link-cabecalho" href="/consumo/eletro-view">ELETRÔNICOS</Link>
