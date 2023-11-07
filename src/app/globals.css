@@ -8,15 +8,38 @@
   }
 
   .rodape {
-    @apply bg-gray-800 text-white h-16 static w-full bottom-0;
+    @apply bg-gray-500 justify-around text-black text-center  h-16  w-full fixed bottom-0;
   }
 
   .card-eletro-view {
-    @apply bg-slate-500;
+    @apply bg-gray-500;
 
-    & ul{
-      @apply flex flex-row flex-wrap justify-center;
+    & table{
+      @apply border-collapse border-black border-4 h-auto;
+
+      & tr{
+          @apply border-collapse border-black border-4 hover:bg-gray-600;
+
+          & th{
+              @apply border-collapse border-black border-4;
+          }
+      }
+  }
+
+     & ul{
+            @apply flex flex-row flex-wrap justify-center gap-9 h-auto  bg-gray-500 py-10;
+        }
+        & li{
+            @apply bg-gray-700 w-auto p-5 text-center text-zinc-100 text-lg 
+        }
+        & .nome{
+            @apply text-green-600 border-none;
+        }
+
+        & .icons{
+            @apply flex flex-row 
+        }
     }
 
   }
-} 
+
